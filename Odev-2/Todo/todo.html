@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Melike Özlen" />
+    <meta name="description" content="Todo App" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="todo.css">
+    <title>Todo App</title>
+</head>
+
+<body>
+    <!-- Tubisad TechChareer 1. Ödevi. Sadece HTML elemanları kullanılarak bir Todo App iskeleti hazırlanmıştır. -->
+
+    <div class="container">
+        <div class="top">
+            <h2>New Todo:</h2>
+            <div class="todo__input">
+                <form action="">
+                    <input type="text" placeholder="Create New Todo.." required />
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+        </div>
+
+
+        <ul>
+            <li>
+                <label for="editible">Edit : </label>
+                <input type="text" id="editible" value="Make" autofocus />
+                <button>Save</button>
+            </li>
+            <li>
+                <input type="checkbox" id="html" name="html">
+                <p>Do homework! </p>
+                <div class="buttons">
+                    <button><i class="fa-regular fa-trash-can"></i></button>
+                    <button><i class="fa-solid fa-pencil"></i></button>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox" id="html" name="html">
+                <p>Go shopping.</p>
+                <div class="buttons">
+                    <button><i class="fa-regular fa-trash-can"></i></i></button>
+                    <button><i class="fa-solid fa-pencil"></i></i></button>
+
+                </div>
+
+            </li>
+            <li>
+                <input type="checkbox" id="html" name="html">
+                <p>Do exercise!</p>
+                <div class="buttons">
+                    <button><i class="fa-regular fa-trash-can"></i></i></button>
+                    <button><i class="fa-solid fa-pencil"></i></i></button>
+                </div>
+            </li>
+        </ul>
+    </div>
+<footer>
+    <p>Melike Özlen - TUBISAD TechChareer Bootcamp</p>
+</footer>
+</body>
+
+</html>

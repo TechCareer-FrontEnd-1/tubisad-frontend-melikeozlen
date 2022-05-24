@@ -1,0 +1,95 @@
+*,
+::after,
+:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(247, 247, 247);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+h1{
+     font-weight: 400;
+}
+p{
+    margin-bottom: 20px;
+}
+.container {
+    width: 95%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content;
+}
+
+.login {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.9;
+}
+.twitter {
+    background-color: rgb(125, 125, 243);
+}
+
+.facebook {
+    background-color: rgb(21, 21, 78);
+}
+
+.sing_up {
+    width: 100%;
+}
+
+input {
+    padding: 15px;
+    outline: none;
+    border: 0;
+    width:90%;
+}
+
+select {
+    padding: 15px;
+    outline: none;
+    border: 0;
+}
+
+#job {
+    width: 90%;
+}
+#phone{
+    width:65%;
+}
+.item {
+     background: rgb(221, 221, 221);
+    background: linear-gradient(90deg, rgba(221, 221, 221, 1) 10%, rgba(255, 255, 255, 1) 10%);
+    margin: 5px 0;
+    border: 1px solid #ddd;
+}
+label{
+    padding:5px;
+}
+.or{
+    padding:10px 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+.sing_up i{
+    color:rgb(60, 60, 83);
+}

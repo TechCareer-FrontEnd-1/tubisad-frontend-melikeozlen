@@ -1,0 +1,195 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 60%, rgb(255, 0, 128) 40%);
+    background-repeat: no-repeat;
+}
+
+.container {
+    z-index: 50;
+    width: 100%;
+    max-width: 750px;
+    height: max-content;
+    padding: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+}
+
+input {
+    padding: 4px;
+    outline: none;
+    border: 0;
+    height: 50px;
+}
+
+ul {
+    margin-top: 20px;
+    background:white;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+li {
+    list-style: none;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+
+}
+
+li p {
+    width: 70%;
+}
+
+h2 {
+    color: black;
+    margin-bottom: 10px;
+    font-size:19px;
+    font-weight: 500;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    clear: both;
+}
+
+.buttons {
+    float: right;
+}
+
+.top {
+    padding: 10px;
+    box-shadow: 0px 0px 3px 1px #ddd;
+    border-radius: 3px;
+    background:white;
+}
+
+.todo__input {
+    padding: 10px 0;
+}
+
+.todo__input button {
+    background-color: rgb(255, 0, 128);
+    padding: 12px;
+    color: white;
+    margin-right: 2%;
+}
+
+.todo__input button:hover {
+    transform: scale(1.1);
+    background: rgb(255, 0, 128);
+    transition: 0.3s all;
+}
+
+.todo__input input {
+    width: 84%;
+    font-size: 15px;
+    border: 1px solid #ddd;
+}
+
+p {
+    display: inline-block;
+}
+
+input[type="checkbox"] {
+    height: min-content;
+}
+
+.buttons button {
+    margin-right: 5px;
+    font-size: 20px;
+    color: rgb(255, 0, 128);
+
+}
+
+.buttons button:hover {
+    transform: rotate(15deg) scale(1.2);
+    transition: all 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.buttons {
+    display: inline-block;
+}
+
+label {
+    font-size: 13px;
+    color: rgb(143, 143, 143);
+}
+
+label~input {
+    border: 1px solid #ddd;
+    width: 70%;
+}
+
+label~button {
+    padding: 2%;
+    max-height: 55px;
+    height: max-content;
+    border: 1px solid rgb(255, 0, 128);
+    color: rgb(255, 0, 128);
+    margin-top: 1%;
+}
+
+label~button:hover {
+    color: white;
+    background-color: rgb(255, 0, 128);
+    transition: 0.4s all;
+}
+
+input[type="checkbox"]:checked~p {
+    text-decoration: line-through;
+    color: rgb(255, 0, 128);
+}
+footer{
+    position:absolute;
+    bottom: 0;
+    margin-left: 35%;
+    margin-right: 15%;
+    font-size: 10px;
+    margin-bottom: 5px;
+
+}
+@media screen and (max-width: 600px) {
+    .todo__input input {
+        width: 72%;
+        height: 20%;
+    }
+
+    .todo__input button {
+        padding: 7px;
+        font-size: 13px;
+    }
+
+    label~input {
+        width: 63%;
+        height: 10%;
+    }
+
+    label~button {
+        padding: 1%;
+    }
+
+    p {
+        height: max-content;
+    }
+
+    .buttons {
+        float: none;
+    }
+}
