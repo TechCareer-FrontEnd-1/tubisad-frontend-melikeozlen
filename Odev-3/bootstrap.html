@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TUBISAD TeachCareer | Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- react libraries -->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+        .login {
+            position: relative;
+            font-size: 28px;
+        }
+
+        .login::after {
+            content: "";
+            position: absolute;
+            height: 2.5px;
+            width: 7%;
+            left: 0;
+            bottom: 0;
+            background-color: rgb(124, 42, 232);
+            transition: width 1s;
+        }
+        .btn:hover{
+            background-color:rgb(109, 47, 189) !important;
+        }
+        .other-text{
+            font-size: 15px;
+        }
+  
+    </style>
+
+</head>
+
+<body class="pt-5" style="background-color:rgb(124, 42, 232);">
+    <!-- Main Container -->
+    <div class="row  mx-auto w-75 mt-5 shadow-lg">
+
+        <!-- Container Left -->
+        <div class="cont-left col-md-6 py-sm-5 py-4 px-md-5 px-4 bg-white order-sm-1 order-2">
+            <h2 class="login">Login</h2>
+
+            <!-- Email -->
+            <div class="input-email pb-2 row mt-5 border-bottom border-2 mx-sm-0 mx-1">
+
+                <span style="color:rgb(124, 42, 232);" class="col-2  text-left px-sm-0 px-2">
+                    <i class="fa-solid fa-envelope"></i></span>
+                <input style="outline: none;" class="col-10 border-0 bg-transparent text-black text-left px-0" type="email"
+                    placeholder="Enter your email">
+
+            </div>
+            <!-- Password -->
+            <div class="input-password row pb-2 mt-4 mx-sm-0 mx-1 border-bottom border-2 px-sm-0 px-2">
+                <span style="color:rgb(124, 42, 232);" class="col-2  text-left px-0">
+                    <i class="fa-solid fa-lock"></i></span>
+                <input style="outline: none;" class="col-10 px-0 border-0 bg-transparent text-black outline-none"
+                    type="email" placeholder="Enter your password">
+
+            </div>
+            <div class="mt-4 text-left row mx-sm-0 mx-1" id="validation_id"><a href="#"
+                    class="text-decoration-none fw-normal px-0 other-text" style="color:rgb(124, 42, 232);"> Forgot your
+                    password?</a>
+            </div>
+
+            <!-- Button -->
+            <div class="button row mx-sm-0 mx-1">
+                <button style="background-color:rgb(124, 42, 232);"
+                    class="pointer-event btn col-12 text-white border-0 text-center py-2 rounded mt-4 fs-5">Login</button>
+            </div>
+
+            <div id="validation_id" class="text-center mt-4 other-text">Don't have an account? <a href="#"
+                    style="color:rgb(124, 42, 232);" class="pointer-event text-decoration-none"> Sing Up</a></div>
+
+        </div>
+
+        <!-- Container Right -->
+        <div class="cont-right col-md-6 text-center py-sm-5 order-sm-2 order-1" style="
+        background-image: url(https://cdn.pixabay.com/photo/2022/04/11/10/09/apricot-blossoms-7125429_960_720.jpg); 
+        background-image:cover; 
+        opacity: 0.70;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;">
+            <h2 class=" mt-lg-5 mt-sm-5 mt-3 text-white">Every new friend is a new adwenture</h2>
+            <h4 class="text-white mt-3 mt-sm-5 ">let's get connected</h4>
+        </div>
+    </div>
+
+    <p class="text-center mt-5 text-light">Coded by Melike ÖZLEN</p>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
