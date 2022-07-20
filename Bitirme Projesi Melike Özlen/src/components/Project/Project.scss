@@ -1,0 +1,14 @@
+.project-card-animation{
+    animation: fadeIn 1s ease-in-out;
+
+}
+@keyframes fadeIn {
+  from {
+    margin-top: 10rem;
+    opacity: 0.5;
+  }
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,58 @@
+section {
+    position: relative;
+
+    .parallax {
+        /* The image used */
+        background-image: url("../../assets/image/keyboard.jpg");
+
+        /* Set a specific height */
+        min-height: 100vh;
+        left: 40vw;
+        right: 40vw;
+                /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+
+    .about-me {
+        position: absolute;
+        z-index: 50;
+        left: 10vw;
+        right: 10vw;
+        top: 25vh;
+        color: white;
+        display: grid;
+        background-color: #00c9db;
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+        max-width: 50rem;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        margin: 0 auto;
+
+        img {
+            width: 8rem;
+            height: 8rem;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+
+        .about {
+            border-left: 1px solid white;
+            padding: 1rem;
+        }
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .about-me {
+    
+        display: flex !important;
+        flex-direction: column !important;
+   
+    }
+}

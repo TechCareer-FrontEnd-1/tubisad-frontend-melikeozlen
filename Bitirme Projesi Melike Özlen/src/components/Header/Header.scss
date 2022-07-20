@@ -1,0 +1,50 @@
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+
+    &::after {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        content: "";
+        z-index: -1;
+        background-image: url("../../assets/image/laptop.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 0.8;
+    }
+
+    h2 {
+        color: white;
+        font-size: 3rem;
+
+    }
+
+    p {
+        font-size: 1.7rem;
+        color: white;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 300;
+    }
+
+    .protfolio {
+        width: 70%;
+        margin-top: 5rem;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        p {
+            font-size: 0.9rem;
+        }
+    }
+}
